@@ -8,9 +8,11 @@ app.use(express.json());
 
 // Importing routes
 const authRoutes = require('./routes/auth');
+const attendanceRoutes = require('./routes/attendance');
 
 // Using routes
 app.use('/auth', authRoutes);
+app.use('/attendance', attendanceRoutes);
 
 // Running the server
 app.listen(PORT, () => {
