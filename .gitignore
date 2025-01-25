@@ -48,3 +48,6 @@ coverage/
 
 # Git-specific files
 .git/
+
+# Ignore database configuration
+config/config.json
