@@ -5,7 +5,6 @@ const Attendance = require('../models/attendance');
 
 const router = express.Router();
 
-// Endpoint untuk mencatat absensi
 router.post('/', authenticate, upload.single('photo'), async (req, res) => {
     try {
         // Retrieve user_id from JWT payload
